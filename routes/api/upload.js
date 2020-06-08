@@ -28,10 +28,12 @@ router.post('/', upload.single('file'), (req, res, next) => {
         let results = null;
         let rows = data.split("\r\n");
         if(rows[0].toString().includes(',')){
-          rows.map(item => {
+          rows.map(async item => {
+            (function (item) {
               let currentline = item.split(',');
               currentline = currentline.slice(0,4)
               result.push(currentline);
+            }(item))
           })
           results = {
             data : result,

@@ -1,3 +1,4 @@
-Name|Age|City|Country
+Jim Smith|123 Any Street|Boston|US
 John Doe|45|Kansas|USA
 Anamika|54|Pune|India
+Gold Roger|01 MidStreet|Louge Town|East Blue
