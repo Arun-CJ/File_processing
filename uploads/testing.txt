@@ -1,0 +1,3 @@
+Name|Age|City|Country
+John Doe|45|Kansas|USA
+Anamika|54|Pune|India

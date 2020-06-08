@@ -1,0 +1,22 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "Backend part for Symphony task",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev:client": "cd client && yarn start",
+    "dev:server": "nodemon  --expose-gc -- index.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn dev:client\" \"yarn dev:server\""
+  },
+  "author": "CJ",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.4"
+  }
+}
